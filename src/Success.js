@@ -14,7 +14,7 @@ export default function Success(){
 
     const save = (event) => {
         event.preventDefault();
-        let urladd = "http://localhost:5000/save";
+        let urladd = "https://ss-20june23-backend-qyakpxv2t-vishal-gori.vercel.app/save";
         let data = {name, company, pkg}
         axios.post(urladd, data)
         .then(res=> {
